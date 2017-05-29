@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Welcome to our website</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+
+  
+  </head>
+  <body>
+  <div class="wizardCont">
+	
+		<nav class="navbar navbar-default gsuNav">
+			<div class="container-fluid">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header col-md-9 col-sm-8 col-xs-0">
+				  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				  </button>
+				  <a class="navbar-brand" href="#">
+					<img src="images/logo.jpg" alt=" " />
+				  </a>
+				  <h1 href="#" class="title"><b>Sales Management Portal</b></h1>
+				</div>
+
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse navbar-righ col-md-1 col-sm-1 col-xs-0" id="bs-example-navbar-collapse-1">
+				  <ul class="nav navbar-nav">
+					
+					<li class="flagWizard"><a href="#"><img src="images/usa.png" alt="" class="flag" /></a></li>
+				  </ul>
+				</div><!-- /.navbar-collapse -->
+			</div><!-- /.container-fluid -->
+		</nav>
+		
+	</div>
+	<div class="container">
+	<header class="jumbotron">
+<div>
+<center>
+
+<h2>Employment Application</h2>
+<script type="text/javascript">
+function ValidateForm(frm) {
+if (frm.First_Name.value == "") {alert('First name is required.');frm.First_Name.focus();return false;}
+if (frm.Last_Name.value == "") {alert('Last name is required.');frm.Last_Name.focus();return false;}
+if (frm.Email_Address.value == "") {alert('Email address is required.');frm.Email_Address.focus();return false;}
+if (frm.Email_Address.value.indexOf("@") < 1 || frm.Email_Address.value.indexOf(".") < 1) {alert('Please enter a valid email address.');frm.Email_Address.focus();return false;}
+if (frm.Position.value == "") {alert('Position is required.');frm.Position.focus();return false;}
+if (frm.Phone.value == "") {alert('Phone is required.');frm.Phone.focus();return false;}
+if (frm.skip_CaptchaCode.value == "") {alert('Enter security code.');frm.skip_CaptchaCode.focus();return false;}
+return true; }
+function ReloadCaptchaImage(captchaImageId) {
+var obj = document.getElementById(captchaImageId);
+var src = obj.src;
+var date = new Date();
+var pos = src.indexOf('&rad=');
+if (pos >= 0) { src = src.substr(0, pos); }
+obj.src = src + '&rad=' + date.getTime();
+return false; }
+</script>
+<hr />
+<form action="http://www.SnapHost.com/captcha/send.aspx" id="ContactUsCaptchaWebForm" method="post" onsubmit="return ValidateForm(this);">
+<input id="skip_WhereToSend" name="skip_WhereToSend" type="hidden" value="your@email.com" />
+<input id="skip_SnapHostID" name="skip_SnapHostID" type="hidden" value="APS6RNGWT5U9" />
+<input id="skip_WhereToReturn" name="skip_WhereToReturn" type="hidden" 
+value="http://www.YourWebsiteAddress.com/ThankYouPage.htm" />
+<input id="skip_Subject" name="skip_Subject" type="hidden" value="Employment Application" />
+<input id="skip_ShowUsersIp" name="skip_ShowUsersIp" type="hidden" value="1" />
+<input id="skip_SendCopyToUser" name="skip_SendCopyToUser" type="hidden" value="1" />
+<table border="0" cellpadding="5" cellspacing="0">
+<tr>
+<td style="width:50%">
+<b>First name *</b><br />
+<input name="First_Name" type="text" maxlength="50" style="width:260px" />
+</td>
+<td style="width:50%">
+<b>Last name *</b><br />
+<input name="Last_Name" type="text" maxlength="50" style="width:260px" />
+</td>
+</tr>
+<tr>
+<td colspan="2">
+<b>Email *</b><br />
+<input name="Email_Address" type="text" maxlength="100" style="width:535px" />
+</td>
+</tr>
+<tr>
+<td colspan="2">
+<b>Portfolio website</b><br />
+<input name="Portfolio" type="text" maxlength="255" value="http://" style="width:535px" />
+</td>
+</tr>
+<tr>
+<td colspan="2">
+<b>Position you are applying for *</b><br />
+<input name="Position" type="text" maxlength="100" style="width:535px" />
+</td>
+</tr>
+<tr>
+<td style="width:50%">
+<b>Salary requirements</b><br />
+<input name="Salary" type="text" maxlength="50" style="width:260px" />
+</td>
+<td style="width:50%">
+<b>When can you start?</b><br />
+<input name="StartDate" type="text" maxlength="50" style="width:260px" />
+</td>
+</tr>
+<tr>
+<td style="width:50%">
+<b>Phone *</b><br />
+<input name="Phone" type="text" maxlength="50" style="width:260px" />
+</td>
+<td style="width:50%">
+<b>Fax</b><br />
+<input name="Fax" type="text" maxlength="50" style="width:260px" />
+</td>
+</tr>
+<tr>
+<td colspan="2">
+<b>Are you willing to relocate?</b><br />
+<input name="Relocate" type="radio" value="Yes" checked="checked" /> Yes &nbsp; &nbsp; &nbsp;
+<input name="Relocate" type="radio" value="No" /> No &nbsp; &nbsp; &nbsp;
+<input name="Relocate" type="radio" value="NotSure" /> Not sure
+</td>
+</tr>
+<tr>
+<td colspan="2">
+<b>Last company you worked for</b><br />
+<input name="Organization" type="text" maxlength="100" style="width:535px" />
+</td>
+</tr>
+<tr>
+<td colspan="2">
+<b>Reference / Comments / Questions</b><br />
+<textarea name="Reference" rows="7" cols="40" style="width:535px"></textarea>
+</td>
+</tr>
+</table>
+<br />
+<div style="text-align:center;">
+<table border="0" cellpadding="0" cellspacing="0" style="text-align:center; width:300px; margin:auto;">
+
+<tr>
+<td><i>Enter security code</i></td>
+<td>SECURITY CODE</td>
+</tr>
+<tr>
+<td>
+<input name="skip_CaptchaCode" type="text" maxlength="6"
+style="width:130px; height:28px; font-size:24px; text-align:center;" />
+</td>
+<td>
+<a href="http://www.snaphost.com/captcha/ReadyForms/EmploymentApplicationForm.aspx"><img id="CaptchaImage" alt="Employment Application form" title="HTML code for Employment Application web form"
+style="margin-left:20px; border:1px solid #999999;"
+src="http://www.SnapHost.com/captcha/CaptchaImage.aspx?id=APS6RNGWT5U9&ImgType=2" /></a>
+<br /><a href="#" onclick="return ReloadCaptchaImage('CaptchaImage');"><span style="font-size:12px;">reload image</span></a>
+</td>
+</tr>
+</table>
+<br /><br />
+<input type="button" onclick="location.href='formsuccess.jsp';" value="Send Application" />
+
+</div>
+</form>
+</center>
+</div></header></div>
+ <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
